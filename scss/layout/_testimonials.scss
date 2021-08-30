@@ -9,6 +9,7 @@
 .testimonials-text {
 	background: $light-gray;
 	padding: 50px 60px 110px 60px;
+	position: relative;
 	p {
 		opacity: 0.7;
 		&::before,
@@ -19,14 +20,14 @@
 			height: 30px;
 		}
 		&::after {
-			background: url(../images/icons/top.svg) no-repeat;
-			top: 30px;
-			left: 30px;
-		}
-		&::before {
 			background: url(../images/icons/bottom.svg) no-repeat;
 			bottom: 30px;
 			right: 30px;
+		}
+		&::before {
+			background: url(../images/icons/top.svg) no-repeat;
+			top: 30px;
+			left: 30px;
 		}
 	}
 }
