@@ -1,0 +1,41 @@
+.header-area {
+	color: $white-color;
+	height: 120px;
+	line-height: 120px;
+	a {
+		color: $white-color;
+	}
+	position: relative;
+	z-index: 1;
+}
+.main-nav-bar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	.btn {
+		margin-left: 40px;
+	}
+}
+.nav-bar-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-link:focus,
+.nav-link:hover {
+	color: inherit;
+}
+.nav-link {
+	font-family: $montserrat-font;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 20px;
+	padding: 0 20px;
+}
+
+.nav-btn {
+	.btn {
+		text-transform: uppercase;
+	}
+}

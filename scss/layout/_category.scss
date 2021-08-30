@@ -1,0 +1,48 @@
+.category-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.category-content {
+	min-width: 370px;
+	border-radius: 24px;
+	padding: 90px 120px 36px 60px;
+	margin: 0 15px;
+}
+.pop-category {
+	background: #fbf3e8;
+}
+.folk-category {
+	background: #ffeeee;
+}
+.inst-category {
+	background: $theme-color;
+	.single-category {
+		color: $white-color;
+	}
+}
+.rock-category {
+	background: #f9e5f5;
+}
+.jazz-category {
+	background: #f3f9ff;
+}
+.single-category {
+	color: $dark-color;
+
+	img {
+		margin-bottom: 30px;
+	}
+	h3 {
+		font-size: 24px;
+		font-weight: 800;
+		line-height: 38px;
+	}
+	p {
+		font-size: 16px;
+		font-weight: 400;
+		opacity: 0.7;
+		line-height: 24px;
+		margin-bottom: 0;
+	}
+}

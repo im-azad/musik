@@ -1,0 +1,41 @@
+// Base style
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		color: inherit;
+	}
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+// Section title style
+section {
+	padding: 120px 0;
+}
+
+.section-title {
+	margin-bottom: 60px;
+
+	h2 {
+		font-size: 34px;
+		line-height: 44.2px;
+		font-weight: 700;
+		span {
+			color: $theme-color;
+		}
+	}
+}

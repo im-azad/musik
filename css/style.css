@@ -1,0 +1,449 @@
+/* ===================================
+Project Name 	:  Musik Concert Landing Page 
+File 			:  CSS Base
+Version 		:  1.0;
+Author 			:  
+Developer:		:  
+
+=====================================*/
+/* ==================================
+CSS table Of content
+
+    01. Base style
+    02. Typography style
+
+=====================================*/
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1170px; } }
+
+/* ----------------
+    01. Base style
+-------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    color: inherit; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+section {
+  padding: 120px 0; }
+
+.section-title {
+  margin-bottom: 60px; }
+  .section-title h2 {
+    font-size: 34px;
+    line-height: 44.2px;
+    font-weight: 700; }
+    .section-title h2 span {
+      color: #381ddb; }
+
+/* ---------------
+    02. Typography style
+ ------------------*/
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #222222; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
+
+p {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 24px; }
+
+/* ---------------
+    03. Buttons style
+ ------------------*/
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 34px;
+  border-radius: 8px;
+  color: #ffffff;
+  -webkit-transition: all(0.3s);
+  -o-transition: all(0.3s);
+  transition: all(0.3s);
+  background: #381ddb; }
+  .btn:hover {
+    background: #fc5252;
+    color: #ffffff; }
+  .btn img {
+    margin-left: 15px; }
+  .btn.btn-outline {
+    color: #381ddb;
+    background: transparent;
+    border: 1px solid #381ddb; }
+    .btn.btn-outline:hover {
+      background: #381ddb;
+      color: #ffffff; }
+
+.btn-white {
+  background: #ffffff;
+  color: #381ddb; }
+
+.btn-read {
+  background: #fc5252;
+  color: #ffffff; }
+  .btn-read:hover {
+    background: #ffffff;
+    color: #381ddb; }
+
+/* ---------------
+    04. Header area style
+ ------------------*/
+.header-area {
+  color: #ffffff;
+  height: 120px;
+  line-height: 120px;
+  position: relative;
+  z-index: 1; }
+  .header-area a {
+    color: #ffffff; }
+
+.main-nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .main-nav-bar .btn {
+    margin-left: 40px; }
+
+.nav-bar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav-link:focus,
+.nav-link:hover {
+  color: inherit; }
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 20px;
+  padding: 0 20px; }
+
+.nav-btn .btn {
+  text-transform: uppercase; }
+
+/* ---------------
+    05. Hero area style
+ ------------------*/
+.hero-area {
+  background: url(../images/hero.png) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -120px; }
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 200px 0;
+  color: #ffffff;
+  width: 970px;
+  margin: 0 auto;
+  text-align: center; }
+  .hero-content h2 {
+    font-size: 71px;
+    font-weight: 700;
+    line-height: 87.77px;
+    text-transform: capitalize;
+    margin-bottom: 40px; }
+    .hero-content h2 span {
+      color: #ffa3a3; }
+  .hero-content p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 40px; }
+
+.hero-btn .btn {
+  margin-right: 40px; }
+
+.hero-btn .play-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 800; }
+  .hero-btn .play-btn img {
+    margin-right: 20px; }
+
+/* ---------------
+    06. Category area style
+ ------------------*/
+.category-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.category-content {
+  min-width: 370px;
+  border-radius: 24px;
+  padding: 90px 120px 36px 60px;
+  margin: 0 15px; }
+
+.pop-category {
+  background: #fbf3e8; }
+
+.folk-category {
+  background: #ffeeee; }
+
+.inst-category {
+  background: #381ddb; }
+  .inst-category .single-category {
+    color: #ffffff; }
+
+.rock-category {
+  background: #f9e5f5; }
+
+.jazz-category {
+  background: #f3f9ff; }
+
+.single-category {
+  color: #222222; }
+  .single-category img {
+    margin-bottom: 30px; }
+  .single-category h3 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 38px; }
+  .single-category p {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+    line-height: 24px;
+    margin-bottom: 0; }
+
+/* ---------------
+    07. About area style
+ ------------------*/
+.about-content p,
+.singer-content p {
+  margin: 30px 0 80px 0;
+  opacity: 0.7; }
+
+.singers-img img {
+  width: 100%; }
+
+/* ---------------
+    08. About area style
+ ------------------*/
+.single-pricing {
+  -webkit-box-shadow: 0px 20px 100px rgba(34, 34, 34, 0.15);
+  box-shadow: 0px 20px 100px rgba(34, 34, 34, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  border-top: 4px solid #222222; }
+  .single-pricing.standard-price {
+    border-top: 4px solid #381ddb; }
+    .single-pricing.standard-price h3,
+    .single-pricing.standard-price h2 {
+      color: #381ddb; }
+  .single-pricing.premium-price {
+    border-top: 4px solid #fc5252; }
+    .single-pricing.premium-price h3,
+    .single-pricing.premium-price h2 {
+      color: #fc5252; }
+
+.pricing-content {
+  text-align: center; }
+  .pricing-content .price-offer {
+    margin-bottom: 30px; }
+  .pricing-content p {
+    margin-bottom: 15px; }
+  .pricing-content .unable {
+    opacity: 0.5; }
+
+.price-title {
+  margin-bottom: 30px; }
+  .price-title h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 38px;
+    margin-bottom: 15px; }
+  .price-title h2 {
+    font-size: 60px;
+    line-height: 73px; }
+
+/* ---------------
+    09. About area style
+ ------------------*/
+.branding-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.brand-img {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 60px;
+  -webkit-column-gap: 130px;
+  column-gap: 130px;
+  margin-bottom: 80px; }
+  .brand-img img {
+    text-align: center; }
+
+/* ---------------
+    09. About area style
+ ------------------*/
+.testimonials-content {
+  width: 770px;
+  text-align: center;
+  position: relative;
+  text-align: center;
+  margin: 0 auto; }
+
+.testimonials-text {
+  background: #f8f8f8;
+  padding: 50px 60px 110px 60px; }
+  .testimonials-text p {
+    opacity: 0.7; }
+    .testimonials-text p::before, .testimonials-text p::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px; }
+    .testimonials-text p::after {
+      background: url(../images/icons/top.svg) no-repeat;
+      top: 30px;
+      left: 30px; }
+    .testimonials-text p::before {
+      background: url(../images/icons/bottom.svg) no-repeat;
+      bottom: 30px;
+      right: 30px; }
+
+.client-info {
+  margin-top: -50px; }
+  .client-info a {
+    color: #381ddb; }
+
+/* ---------------
+    03. Footer area style
+ ------------------*/
+.footer-area {
+  background: #222222;
+  padding: 40px 0 20px 0; }
+
+.footer-logo {
+  margin-bottom: 40px; }
+
+.footer-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.footer-widget-link a {
+  color: #ffffff; }
+  .footer-widget-link a:hover {
+    color: #ffffff; }
+
+.footer-social-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .footer-social-widget a {
+    margin-left: 30px; }
+  .footer-social-widget .copy-info {
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.3;
+    margin: 0 0 0 100px; }
+
+.footer-widget-link ul li:first-child {
+  margin-left: -20px; }

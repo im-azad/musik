@@ -1,0 +1,48 @@
+.hero-area {
+	background: url(../images/hero.png) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+	margin-top: -120px;
+}
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 200px 0;
+	color: $white-color;
+	width: 970px;
+	margin: 0 auto;
+	text-align: center;
+	h2 {
+		font-size: 71px;
+		font-weight: 700;
+		line-height: 87.77px;
+		text-transform: capitalize;
+		margin-bottom: 40px;
+		span {
+			color: $light-red;
+		}
+	}
+	p {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 38px;
+		margin-bottom: 40px;
+	}
+}
+
+.hero-btn {
+	.btn {
+		margin-right: 40px;
+	}
+	.play-btn {
+		font-family: $montserrat-font;
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 800;
+		img {
+			margin-right: 20px;
+		}
+	}
+}
