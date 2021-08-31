@@ -368,20 +368,20 @@ p {
     text-align: center; }
 
 /* ---------------
-    09. About area style
+    10. Testimonials area style
  ------------------*/
 .testimonials-content {
   width: 770px;
   text-align: center;
-  position: relative;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .testimonials-text {
   background: #f8f8f8;
-  padding: 50px 60px 110px 60px;
-  position: relative; }
+  padding: 50px 60px 110px 60px; }
   .testimonials-text p {
+    position: relative;
     opacity: 0.7; }
     .testimonials-text p::before, .testimonials-text p::after {
       content: '';
@@ -390,17 +390,67 @@ p {
       height: 30px; }
     .testimonials-text p::after {
       background: url(../images/icons/bottom.svg) no-repeat;
-      bottom: 30px;
-      right: 30px; }
+      bottom: -30px;
+      right: -30px; }
     .testimonials-text p::before {
       background: url(../images/icons/top.svg) no-repeat;
-      top: 30px;
-      left: 30px; }
+      top: -15px;
+      left: -30px; }
 
 .client-info {
   margin-top: -50px; }
+  .client-info .client-thumbnail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .client-info a {
     color: #381ddb; }
+
+/* ---------------
+    09. Blog area style
+ ------------------*/
+.blog-area {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 82, 82, 0.05)), to(rgba(252, 82, 82, 0)));
+  background: -webkit-linear-gradient(top, rgba(252, 82, 82, 0.05) 0%, rgba(252, 82, 82, 0) 100%);
+  background: -o-linear-gradient(top, rgba(252, 82, 82, 0.05) 0%, rgba(252, 82, 82, 0) 100%);
+  background: linear-gradient(180deg, rgba(252, 82, 82, 0.05) 0%, rgba(252, 82, 82, 0) 100%);
+  position: relative; }
+  .blog-area::before {
+    content: '';
+    background: url(../images/icons/instagram-red.svg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 47%;
+    width: 410px;
+    height: 410px;
+    z-index: -1; }
+
+.single-blog.slick-slide {
+  margin: 0 15px; }
+
+.single-post .post-thum {
+  margin-bottom: 24px; }
+  .single-post .post-thum img {
+    display: block;
+    width: 100%; }
+
+.single-post .post-widget {
+  margin-bottom: 8px; }
+  .single-post .post-widget li {
+    display: inline-block;
+    margin-right: 40px; }
+  .single-post .post-widget img {
+    display: inline-block;
+    margin-right: 8px; }
+
+.single-post .post-caption a {
+  margin-bottom: 8px; }
+
+.single-post .post-caption .post-tag {
+  opacity: 0.5; }
 
 /* ---------------
     03. Footer area style
