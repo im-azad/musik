@@ -2,13 +2,13 @@
 	display: flex;
 	padding-bottom: 0;
 	.contact-info-wrapper {
-		background: $theme-color;
+		background: var(--themeColor);
 		padding: 120px 35px 220px 80px;
 		color: $white-color;
 		flex-grow: 1.2;
 		position: relative;
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			bottom: 0;
 			right: 0;
@@ -24,7 +24,7 @@
 		padding: 95px 130px;
 		position: relative;
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			bottom: 0;
 			right: 56px;
@@ -81,12 +81,12 @@
 		padding: 0;
 		border-radius: 0;
 		&:focus {
-			border-color: $theme-color;
+			border-color: var(--themeColor);
 			box-shadow: none;
 		}
 	}
 	.form-massage {
-		color: $theme-color;
+		color: var(--themeColor);
 	}
 	#message {
 		margin-bottom: 40px;

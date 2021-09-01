@@ -1,6 +1,6 @@
 // Button style
 .btn {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	height: 60px;
@@ -9,7 +9,7 @@
 	border-radius: 8px;
 	color: $white-color;
 	transition: all(0.3s);
-	background: $theme-color;
+	background: var(--themeColor);
 
 	&:hover {
 		background: $general-red;
@@ -19,11 +19,11 @@
 		margin-left: 15px;
 	}
 	&.btn-outline {
-		color: $theme-color;
+		color: var(--themeColor);
 		background: transparent;
-		border: 1px solid $theme-color;
+		border: 1px solid var(--themeColor);
 		&:hover {
-			background: $theme-color;
+			background: var(--themeColor);
 			color: $white-color;
 		}
 	}
@@ -34,13 +34,13 @@
 
 .btn-white {
 	background: $white-color;
-	color: $theme-color;
+	color: var(--themeColor);
 }
 .btn-read {
 	background: $general-red;
 	color: $white-color;
 	&:hover {
 		background: $white-color;
-		color: $theme-color;
+		color: var(--themeColor);
 	}
 }

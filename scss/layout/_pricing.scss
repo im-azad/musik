@@ -5,10 +5,10 @@
 	position: relative;
 	border-top: 4px solid $dark-color;
 	&.standard-price {
-		border-top: 4px solid $theme-color;
+		border-top: 4px solid var(--themeColor);
 		h3,
 		h2 {
-			color: $theme-color;
+			color: var(--themeColor);
 		}
 	}
 	&.premium-price {

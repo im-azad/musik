@@ -35,7 +35,7 @@ section {
 		line-height: 44.2px;
 		font-weight: 700;
 		span {
-			color: $theme-color;
+			color: var(--themeColor);
 		}
 	}
 }
