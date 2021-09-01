@@ -1,9 +1,10 @@
 // font variables
-$montserrat-font: 'Montserrat', sans-serif;
-$raleway-font: 'Raleway', sans-serif;
-
+:root {
+	--headingFont: "Montserrat", sans-serif;
+	--bodyFont: "Raleway", sans-serif;
+	--themeColor: #381ddb;
+}
 // Color variables
-$theme-color: #381ddb;
 $white-color: #ffffff;
 $dark-color: #222222;
 $light-red: #ffa3a3;

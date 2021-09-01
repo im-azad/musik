@@ -15,67 +15,67 @@ CSS table Of content
 
 =====================================*/
 
-@import 'helpers/variables';
-@import 'helpers/breakpoints';
+@import "helpers/variables";
+@import "helpers/breakpoints";
 
 /* ----------------
     01. Base style
 -------------------*/
-@import 'base/base';
+@import "base/base";
 
 /* ---------------
     02. Typography style
  ------------------*/
-@import 'components/_typography';
+@import "components/_typography";
 
 /* ---------------
     03. Buttons style
  ------------------*/
-@import 'components/button';
+@import "components/button";
 
 /* ---------------
     04. Header area style
  ------------------*/
-@import 'layout/header';
+@import "layout/header";
 
 /* ---------------
     05. Hero area style
  ------------------*/
-@import 'layout/hero';
+@import "layout/hero";
 /* ---------------
     06. Category area style
  ------------------*/
-@import 'layout/category';
+@import "layout/category";
 /* ---------------
     07. About area style
  ------------------*/
-@import 'layout/about';
+@import "layout/about";
 /* ---------------
     08. About area style
  ------------------*/
-@import 'layout/pricing';
+@import "layout/pricing";
 /* ---------------
     09. About area style
  ------------------*/
-@import 'layout/branding';
+@import "layout/branding";
 /* ---------------
     10. Testimonials area style
  ------------------*/
-@import 'layout/testimonials';
+@import "layout/testimonials";
 /* ---------------
     11. Blog area style
  ------------------*/
-@import 'layout/blog';
+@import "layout/blog";
 /* ---------------
     12. Event schedule area style
  ------------------*/
-@import 'layout/event-schedule';
+@import "layout/event-schedule";
 /* ---------------
     13. Contact area style
  ------------------*/
-@import 'layout/contact';
+@import "layout/contact";
 
 /* ---------------
     14. Footer area style
  ------------------*/
-@import 'layout/footer';
+@import "layout/footer";
