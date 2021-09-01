@@ -63,11 +63,19 @@ CSS table Of content
  ------------------*/
 @import 'layout/testimonials';
 /* ---------------
-    09. Blog area style
+    11. Blog area style
  ------------------*/
 @import 'layout/blog';
+/* ---------------
+    12. Event schedule area style
+ ------------------*/
+@import 'layout/event-schedule';
+/* ---------------
+    13. Contact area style
+ ------------------*/
+@import 'layout/contact';
 
 /* ---------------
-    03. Footer area style
+    14. Footer area style
  ------------------*/
 @import 'layout/footer';

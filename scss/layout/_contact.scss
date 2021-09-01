@@ -1,0 +1,94 @@
+.contact-area {
+	display: flex;
+	padding-bottom: 0;
+	.contact-info-wrapper {
+		background: $theme-color;
+		padding: 120px 35px 220px 80px;
+		color: $white-color;
+		flex-grow: 1.2;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background: url(../images/icons/form-shape.png) no-repeat;
+			width: 224px;
+			height: 232px;
+		}
+	}
+
+	.contact-form-wrapper {
+		background: $light-gray;
+		flex-grow: 2;
+		padding: 95px 130px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 56px;
+			background: url(../images/icons/form-shape2.png) no-repeat;
+			width: 72px;
+			height: 48px;
+		}
+	}
+}
+
+.contact-info {
+	.section-title {
+		margin-bottom: 80px;
+		p {
+			opacity: 0.7;
+			font-weight: 400;
+		}
+	}
+	li {
+		margin-bottom: 40px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		img {
+			margin-right: 8px;
+		}
+	}
+}
+
+.contact-form-area {
+	max-width: 570px;
+	.contact-form-title {
+		h3 {
+			font-size: 24px;
+			font-weight: 800;
+			line-height: 38px;
+			color: $dark-color;
+			margin-bottom: 30px;
+		}
+	}
+	input {
+		margin-bottom: 30px;
+	}
+	label {
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 18px;
+	}
+	.musik-form {
+		width: 100%;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid #e0e0e0;
+		padding: 0;
+		border-radius: 0;
+		&:focus {
+			border-color: $theme-color;
+			box-shadow: none;
+		}
+	}
+	.form-massage {
+		color: $theme-color;
+	}
+	#message {
+		margin-bottom: 40px;
+	}
+}

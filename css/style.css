@@ -109,6 +109,8 @@ p {
     .btn.btn-outline:hover {
       background: #381ddb;
       color: #ffffff; }
+  .btn.btn-full-width {
+    width: 100%; }
 
 .btn-white {
   background: #ffffff;
@@ -410,7 +412,7 @@ p {
     color: #381ddb; }
 
 /* ---------------
-    09. Blog area style
+    11. Blog area style
  ------------------*/
 .blog-area {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 82, 82, 0.05)), to(rgba(252, 82, 82, 0)));
@@ -453,7 +455,109 @@ p {
   opacity: 0.5; }
 
 /* ---------------
-    03. Footer area style
+    12. Event schedule area style
+ ------------------*/
+.event-schedule-area {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 29, 219, 0.05)), to(rgba(56, 29, 219, 0)));
+  background: -webkit-linear-gradient(top, rgba(56, 29, 219, 0.05) 0%, rgba(56, 29, 219, 0) 100%);
+  background: -o-linear-gradient(top, rgba(56, 29, 219, 0.05) 0%, rgba(56, 29, 219, 0) 100%);
+  background: linear-gradient(180deg, rgba(56, 29, 219, 0.05) 0%, rgba(56, 29, 219, 0) 100%); }
+
+.event-tab-btn .nav-tabs .nav-link {
+  margin-bottom: 20px;
+  padding: 0 150px 20px 0;
+  margin-right: 20px;
+  background: 0 0;
+  border: none;
+  border-bottom: 2px solid blue;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+/* ---------------
+    13. Contact area style
+ ------------------*/
+.contact-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 0; }
+  .contact-area .contact-info-wrapper {
+    background: #381ddb;
+    padding: 120px 35px 220px 80px;
+    color: #ffffff;
+    -webkit-box-flex: 1.2;
+    -ms-flex-positive: 1.2;
+    flex-grow: 1.2;
+    position: relative; }
+    .contact-area .contact-info-wrapper::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: url(../images/icons/form-shape.png) no-repeat;
+      width: 224px;
+      height: 232px; }
+  .contact-area .contact-form-wrapper {
+    background: #f8f8f8;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    padding: 95px 130px;
+    position: relative; }
+    .contact-area .contact-form-wrapper::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 56px;
+      background: url(../images/icons/form-shape2.png) no-repeat;
+      width: 72px;
+      height: 48px; }
+
+.contact-info .section-title {
+  margin-bottom: 80px; }
+  .contact-info .section-title p {
+    opacity: 0.7;
+    font-weight: 400; }
+
+.contact-info li {
+  margin-bottom: 40px; }
+  .contact-info li:last-child {
+    margin-bottom: 0; }
+  .contact-info li img {
+    margin-right: 8px; }
+
+.contact-form-area {
+  max-width: 570px; }
+  .contact-form-area .contact-form-title h3 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 38px;
+    color: #222222;
+    margin-bottom: 30px; }
+  .contact-form-area input {
+    margin-bottom: 30px; }
+  .contact-form-area label {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px; }
+  .contact-form-area .musik-form {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0;
+    border-radius: 0; }
+    .contact-form-area .musik-form:focus {
+      border-color: #381ddb;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .contact-form-area .form-massage {
+    color: #381ddb; }
+  .contact-form-area #message {
+    margin-bottom: 40px; }
+
+/* ---------------
+    14. Footer area style
  ------------------*/
 .footer-area {
   background: #222222;
