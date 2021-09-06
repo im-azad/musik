@@ -13,6 +13,9 @@
 	justify-content: flex-end;
 	align-items: center;
 	flex-wrap: wrap;
+	@media (max-width: 768px) {
+		display: inherit;
+	}
 	.btn {
 		margin-left: 40px;
 	}
@@ -22,9 +25,10 @@
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	@media (max-width: 767px) {
+	@media (max-width: 768px) {
 		justify-content: start;
 		align-items: flex-start;
+		flex-direction: column;
 	}
 }
 .nav-link:focus,
