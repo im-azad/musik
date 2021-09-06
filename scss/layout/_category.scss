@@ -16,6 +16,24 @@
 .category-content {
 	border-radius: 24px;
 	padding: 90px 120px 36px 60px;
+	&:nth-child(1) {
+		background: #fbf3e8;
+	}
+	&:nth-child(2) {
+		background: #ffeeee;
+	}
+	&:nth-child(3) {
+		background: var(--themeColor);
+		.single-category {
+			color: var(--whiteColor);
+		}
+	}
+	&:nth-child(4) {
+		background: #f3f9ff;
+	}
+	&:nth-child(5) {
+		background: #fbf3e8;
+	}
 	@media (min-width: 768px) and (max-width: 1366px) {
 		&:last-child {
 			display: none;
@@ -25,26 +43,9 @@
 		padding: 40px;
 	}
 }
-.pop-category {
-	background: #fbf3e8;
-}
-.folk-category {
-	background: #ffeeee;
-}
-.inst-category {
-	background: var(--themeColor);
-	.single-category {
-		color: $white-color;
-	}
-}
-.rock-category {
-	background: #f9e5f5;
-}
-.jazz-category {
-	background: #f3f9ff;
-}
+
 .single-category {
-	color: $dark-color;
+	color: var(--darkColor);
 
 	img {
 		margin-bottom: 30px;

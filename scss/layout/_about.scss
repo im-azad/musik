@@ -6,6 +6,15 @@
 	}
 }
 
+.about-img {
+	padding-right: 30px;
+	@media (max-width: 767px) {
+		padding-right: 0px;
+	}
+	img {
+		width: 100%;
+	}
+}
 .singers-img {
 	img {
 		width: 100%;

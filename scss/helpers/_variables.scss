@@ -1,15 +1,14 @@
-// font variables
+// root variables
 :root {
-	--headingFont: "Montserrat", sans-serif;
-	--bodyFont: "Raleway", sans-serif;
+	--headingFont: 'Montserrat', sans-serif;
+	--bodyFont: 'Raleway', sans-serif;
 	--themeColor: #381ddb;
+	--whiteColor: #ffffff;
+	--darkColor: #222222;
+	--generalRed: #fc5252;
+	--lightRed: #ffa3a3;
+	--grayColor: #e0e0e0;
+	--lightColor: #f8f8f8;
+	--yellowColor: #db841d;
+	--borderColor: #e0e0e0;
 }
-// Color variables
-$white-color: #ffffff;
-$dark-color: #222222;
-$light-red: #ffa3a3;
-$general-red: #fc5252;
-$light-gray: #f8f8f8;
-$yellow-color: #db841d;
-$gray-color: #e0e0e0;
-$border-color: #e0e0e0;

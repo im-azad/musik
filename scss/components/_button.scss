@@ -1,19 +1,19 @@
 // Button style
 .btn {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	height: 60px;
 	line-height: 60px;
 	padding: 0 34px;
 	border-radius: 8px;
-	color: $white-color;
+	color: var(--whiteColor);
 	transition: all(0.3s);
 	background: var(--themeColor);
 
 	&:hover {
-		background: $general-red;
-		color: $white-color;
+		background: var(--generalRed);
+		color: var(--whiteColor);
 	}
 	img {
 		margin-left: 15px;
@@ -24,7 +24,7 @@
 		border: 1px solid var(--themeColor);
 		&:hover {
 			background: var(--themeColor);
-			color: $white-color;
+			color: var(--whiteColor);
 		}
 	}
 	&.btn-full-width {
@@ -33,14 +33,14 @@
 }
 
 .btn-white {
-	background: $white-color;
+	background: var(--whiteColor);
 	color: var(--themeColor);
 }
 .btn-read {
-	background: $general-red;
-	color: $white-color;
+	background: var(--generalRed);
+	color: var(--whiteColor);
 	&:hover {
-		background: $white-color;
+		background: var(--whiteColor);
 		color: var(--themeColor);
 	}
 }

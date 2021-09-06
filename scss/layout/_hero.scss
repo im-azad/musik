@@ -10,10 +10,14 @@
 	justify-content: center;
 	align-items: center;
 	padding: 200px 0;
-	color: $white-color;
+	color: var(--whiteColor);
 	width: 970px;
 	margin: 0 auto;
 	text-align: center;
+	@media (max-width: 992px) {
+		width: 100%;
+		padding: 150px 0;
+	}
 	h2 {
 		font-size: 71px;
 		font-weight: 700;
@@ -21,7 +25,11 @@
 		text-transform: capitalize;
 		margin-bottom: 40px;
 		span {
-			color: $light-red;
+			color: var(--lightRed);
+		}
+		@media (max-width: 767px) {
+			font-size: 40px;
+			line-height: 50px;
 		}
 	}
 	p {
@@ -29,12 +37,19 @@
 		font-weight: 400;
 		line-height: 38px;
 		margin-bottom: 40px;
+		@media (max-width: 767px) {
+			font-size: 20px;
+			line-height: 25px;
+		}
 	}
 }
 
 .hero-btn {
 	.btn {
 		margin-right: 40px;
+		@media (max-width: 767px) {
+			margin-right: 0;
+		}
 	}
 	.play-btn {
 		font-family: var(--headingFont);
@@ -43,6 +58,9 @@
 		font-weight: 800;
 		img {
 			margin-right: 20px;
+		}
+		@media (max-width: 767px) {
+			display: none;
 		}
 	}
 }

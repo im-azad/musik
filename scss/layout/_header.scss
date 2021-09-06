@@ -1,9 +1,9 @@
 .header-area {
-	color: $white-color;
+	color: var(--whiteColor);
 	height: 120px;
 	line-height: 120px;
 	a {
-		color: $white-color;
+		color: var(--whiteColor);
 	}
 	position: relative;
 	z-index: 1;
@@ -12,6 +12,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	flex-wrap: wrap;
 	.btn {
 		margin-left: 40px;
 	}
@@ -20,6 +21,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+	@media (max-width: 767px) {
+		justify-content: start;
+		align-items: flex-start;
+	}
 }
 .nav-link:focus,
 .nav-link:hover {
