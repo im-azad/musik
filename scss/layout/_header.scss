@@ -2,8 +2,15 @@
 	color: var(--whiteColor);
 	height: 120px;
 	line-height: 120px;
+	@media (max-width: 768px) {
+		height: 80px;
+		line-height: 80px;
+	}
 	a {
 		color: var(--whiteColor);
+		@media (max-width: 768px) {
+			padding: 5px 0;
+		}
 	}
 	position: relative;
 	z-index: 1;
@@ -14,10 +21,14 @@
 	align-items: center;
 	flex-wrap: wrap;
 	@media (max-width: 768px) {
-		display: inherit;
+		display: block;
 	}
 	.btn {
-		margin-left: 40px;
+		margin-left: 20px;
+		@media (max-width: 768px) {
+			width: 100%;
+			margin-left: 0;
+		}
 	}
 }
 .nav-bar-nav {
@@ -30,6 +41,12 @@
 		align-items: flex-start;
 		flex-direction: column;
 	}
+}
+.navbar-light .navbar-toggler {
+	background: var(--whiteColor);
+}
+.navbar-toggler:focus {
+	box-shadow: none;
 }
 .nav-link:focus,
 .nav-link:hover {

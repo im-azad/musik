@@ -38,24 +38,6 @@ CSS table Of content
   }
 }
 
-@media (max-width: 767px) {
-  .about-img img {
-    width: 100%;
-  }
-  .about-content {
-    text-align: center;
-  }
-  .section-title {
-    margin-top: 30px;
-  }
-  .singer-content {
-    text-align: center;
-  }
-  .singer-btn {
-    margin-bottom: 30px;
-  }
-}
-
 /* ----------------
     01. Base style
 -------------------*/
@@ -88,6 +70,12 @@ ul {
 
 section {
   padding: 120px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 80px 0;
+  }
 }
 
 .section-title {
@@ -197,8 +185,21 @@ p {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .header-area {
+    height: 80px;
+    line-height: 80px;
+  }
+}
+
 .header-area a {
   color: var(--whiteColor);
+}
+
+@media (max-width: 768px) {
+  .header-area a {
+    padding: 5px 0;
+  }
 }
 
 .main-nav-bar {
@@ -217,12 +218,19 @@ p {
 
 @media (max-width: 768px) {
   .main-nav-bar {
-    display: inherit;
+    display: block;
   }
 }
 
 .main-nav-bar .btn {
-  margin-left: 40px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-nav-bar .btn {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .nav-bar-nav {
@@ -252,6 +260,15 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.navbar-light .navbar-toggler {
+  background: var(--whiteColor);
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .nav-link:focus,
@@ -306,7 +323,6 @@ p {
 @media (max-width: 992px) {
   .hero-content {
     width: 100%;
-    padding: 150px 0;
   }
 }
 
@@ -473,18 +489,31 @@ p {
   padding-right: 30px;
 }
 
-@media (max-width: 767px) {
-  .about-img {
-    padding-right: 0px;
-  }
-}
-
 .about-img img {
   width: 100%;
 }
 
 .singers-img img {
   width: 100%;
+}
+
+@media (max-width: 992px) {
+  .about-img {
+    padding-right: 0px;
+  }
+  .about-img img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about-content {
+    text-align: center;
+  }
+  .singer-content {
+    text-align: center;
+  }
+  .singer-btn {
+    margin-bottom: 30px;
+  }
 }
 
 /* ---------------
@@ -895,6 +924,13 @@ p {
   border-bottom: none;
 }
 
+@media (max-width: 768px) {
+  .panel-item {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .panel-item .panel-item-element:nth-child(1) {
   padding-left: 40px;
 }
@@ -916,11 +952,18 @@ p {
 @media (max-width: 768px) {
   .panel-item .panel-item-element:nth-child(2) {
     padding-left: 20px;
+    margin-bottom: 16px;
   }
 }
 
 .panel-item .panel-item-element:nth-child(3) {
   padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+  .panel-item .panel-item-element:nth-child(3) {
+    padding-left: 20px;
+  }
 }
 
 .panel-item .panel-item-element:nth-child(4) {
@@ -936,12 +979,14 @@ p {
           align-items: center;
 }
 
+@media (max-width: 992px) {
+  .panel-item .panel-item-element:nth-child(4) {
+    padding-left: 16px;
+  }
+}
+
 @media (max-width: 768px) {
   .panel-item .panel-item-element:nth-child(4) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding-right: 20px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -956,15 +1001,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media (max-width: 768px) {
-  .speakers-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 .speakers-info + .speakers-info {
@@ -1005,8 +1041,13 @@ p {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .contact-area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .contact-area .contact-info-wrapper {
@@ -1019,9 +1060,9 @@ p {
   position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .contact-area .contact-info-wrapper {
-    padding: 120px 50px 220px 50px;
+    padding: 120px 30px 220px 30px;
   }
 }
 
@@ -1044,9 +1085,9 @@ p {
   position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .contact-area .contact-form-wrapper {
-    padding: 95px 50px;
+    padding: 95px 30px;
   }
 }
 

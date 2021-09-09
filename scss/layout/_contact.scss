@@ -1,15 +1,17 @@
 .contact-area {
 	display: flex;
 	padding-bottom: 0;
-	flex-wrap: wrap;
+	@media (max-width: 992px) {
+		flex-wrap: wrap;
+	}
 	.contact-info-wrapper {
 		background: var(--themeColor);
 		padding: 120px 35px 220px 80px;
 		color: var(--whiteColor);
 		flex-grow: 1.2;
 		position: relative;
-		@media (max-width: 767px) {
-			padding: 120px 50px 220px 50px;
+		@media (max-width: 992px) {
+			padding: 120px 30px 220px 30px;
 		}
 		&::after {
 			content: '';
@@ -27,8 +29,8 @@
 		flex-grow: 2;
 		padding: 95px 130px;
 		position: relative;
-		@media (max-width: 767px) {
-			padding: 95px 50px;
+		@media (max-width: 992px) {
+			padding: 95px 30px;
 		}
 		&::after {
 			content: '';
